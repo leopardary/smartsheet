@@ -1,0 +1,9 @@
+{%extends "staircase\index.html"%}
+	{%block navbar_choices%}
+      <ul class="nav navbar-nav">
+        <li><a href="{%url 'project'%}">Projects</a></li>
+        <li><a href="{%url 'user'%}">Users</a></li>
+        <li><a href="{%url 'foups'%}">Foup&Wafer</a></li>
+        <li class="active"><a href="{%url 'chamber'%}">Chamber</a></li>
+      </ul>
+	{%endblock%}

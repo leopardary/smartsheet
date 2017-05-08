@@ -23,7 +23,12 @@ def split(request):
     return HttpResponse("Here is managing splits.")
 
 def user(request):
-    return render(request,'staircase/user.html')
+    staircase=Group.objects.filter(group_name='Staircase')
+    user_list=User.objects.filter(group=staircase[0]);
+    context={
+        'user_list':user_list,
+    }
+    return render(request,'staircase/user.html',context)
     #return HttpResponse("Here is managing users.")
 
 def chamber(request):
@@ -38,12 +43,37 @@ def create_user(request):
     if request.method=='POST':
         form=user_form(request.POST)
         if form.is_valid():
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponseRedirect('/staircase/user/create')
+    else:
+        form=user_form()
+
+    staircase=Group.objects.filter(group_name='Staircase')
+    group_list=staircase;
+    user_list=User.objects.filter(group=staircase[0]);
+    context={
+        'group_list':group_list,
+        'user_list':user_list,
+        'form':form,
+    }
+    return render(request,'staircase/create_user.html',context)
+
+def create_user1(request):
+    group_list=Group.objects.all();
+    context={
+        'group_list':group_list
+    }
+    return render(request,'staircase/create_user.html',context)
+
+def save_user(request):
+    if request.method=='POST':
+        form=user_form(request.POST)
+        if form.is_valid():
+            User.create(first_name=form.cleaned_data['first_name'],last_name=form.cleaned_data['last_name'],email=form.cleaned_data['email'],\
+            phonenumber=form.cleaned_data['phonenumber'],group=form.cleaned_data['group'])
+            return HttpResponseRedirect('/staircase/user/create')
     else:
         form=user_form()
     return render(request,'staircase/create_user.html',{'form':form})
-
-
 ##def user_fouplist(request,user):
 ##	try:
 ##        user1=User.objects.get()
