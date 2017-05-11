@@ -1,25 +1,14 @@
-{%extends "staircase\index.html"%}
-	{%block navbar_choices%}
-      <ul class="nav navbar-nav">
-        <li><a href="{%url 'project'%}">Projects</a></li>
-        <li><a href="{%url 'user'%}">Users</a></li>
-        <li class="active"><a href="{%url 'foups'%}">Foup&Wafer</a></li>
-        <li><a href="{%url 'chamber'%}">Chamber</a></li>
-      </ul>
-	{%endblock%}
-	
+{%extends "staircase\foup_wafer.html"%}
+
 	{%block content%}
 	    <div class="col-sm-2 sidenav">
-			{%if foup_list%}
+		{%if slot_list%}
 			<ul>
-			{%for foup in foup_list%}
-			<li><a href="{{foup.foupname}}">{{foup.foupname}} {{foup.owner.first_name}}_{{foup.owner.last_name}}</a></li>
+			{%for slot in slot_list%}
+				<li><a href="#">{{slot.foup}} S{{slot.slot}} </li>
 			{%endfor%}
 			</ul>
-			{%else%}
-			<p>No Foups are available.</p>
-			{%endif%}
-			<p style="position:absolute;left:35%;bottom:10px;"><a class="btn btn-primary btn-medium" href="{%url 'create_foup'%}" role="button">Add Foup</a></p>
+		{%endif%}
 		</div>
     {%endblock%}
 	

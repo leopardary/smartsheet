@@ -4,7 +4,10 @@ from . import  views
 
 urlpatterns=[
 	url(r'^$',views.index,name='index'),
-    url(r'^foups/',views.foups,name='foups'),
+    url(r'^foups/$',views.foups,name='foups'),
+    url(r'^foups/create$',views.create_foup,name='create_foup'),
+    url(r'^foups/save_foup',views.save_foup,name='save_foup'),
+    url(r'^foups/(?P<foup_name>F[0-9]+)/$',views.foup_detail,name='foup_detail'),
     url(r'^project/',views.project,name='project'),
     url(r'^split/',views.split,name='split'),
     url(r'^user/$',views.user,name='user'),

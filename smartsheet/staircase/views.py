@@ -3,17 +3,59 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models.Wafer_Management.Wafer_Management import Wafer,Foup,Foup_slot
 from .models.User.User import User,Group
 from django.template import loader
-from .forms import user_form
+from .forms import user_form,Foup_form
 
 def index(request):
     return render(request,'staircase/index.html')
-	#return HttpResponse("Hello, world. You're at the staircase homepage.")
+        #return HttpResponse("Hello, world. You're at the staircase homepage.")
 
 def foups(request):
     #foup_list=Foup.objects.all()
     #template=loader.get_template()
-	return render(request,'staircase/foup_wafer.html')
+    staircase=Group.objects.filter(group_name='Staircase')
+    foup_list=Foup.objects.filter(owner__group=staircase[0]);
+    context={
+        'foup_list':foup_list,
+    }
+    return render(request,'staircase/foup_wafer.html',context)
     #return HttpResponse("Here is for managing foups and wafers.")
+
+def create_foup(request):
+    if request.method=='POST':
+        form=Foup_form(request.POST)
+        if form.is_valid():
+            return HttpResponseRedirect('/staircase/foups/create')
+    else:
+        form=Foup_form()
+
+    staircase=Group.objects.filter(group_name='Staircase')
+    group_list=staircase;
+    foup_list=Foup.objects.filter(owner__group=staircase[0]);
+    context={
+        'group_list':group_list,
+        'foup_list':foup_list,
+        'form':form,
+    }
+    return render(request,'staircase/create_foup.html',context)
+
+def save_foup(request):
+    if request.method=='POST':
+        form=Foup_form(request.POST)
+        if form.is_valid():
+            Foup.create(foupname=form.cleaned_data['foupname'],note=form.cleaned_data['note'],owner=User.objects.filter(pk=form.cleaned_data['owner'])[0])
+            return HttpResponseRedirect('/staircase/foups/create')
+    else:
+        form=user_form()
+    return render(request,'staircase/create_foup.html',{'form':form})
+
+def foup_detail(request,foup_name):
+    foup=Foup.objects.filter(foupname=foup_name)[0]
+    slot_list=foup.foup_slot_set.all()
+    context={
+        'foup':foup,
+        'slot_list':slot_list,
+    }
+    return render(request,'staircase/foup_detail.html',context)
 
 def project(request):
     return render(request,'staircase/project.html')
@@ -57,12 +99,7 @@ def create_user(request):
     }
     return render(request,'staircase/create_user.html',context)
 
-def create_user1(request):
-    group_list=Group.objects.all();
-    context={
-        'group_list':group_list
-    }
-    return render(request,'staircase/create_user.html',context)
+
 
 def save_user(request):
     if request.method=='POST':
@@ -75,6 +112,7 @@ def save_user(request):
         form=user_form()
     return render(request,'staircase/create_user.html',{'form':form})
 ##def user_fouplist(request,user):
-##	try:
+##      try:
 ##        user1=User.objects.get()
 # Create your views here.
+

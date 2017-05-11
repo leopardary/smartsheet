@@ -8,94 +8,46 @@
       </ul>
 	{%endblock%}
 	
-		{%block content%}
-	  <div class="row content">
-    <div class="col-sm-2 sidenav">
+	{%block content%}
+			<div class="col-sm-2 sidenav">
 	{%if user_list%}
-	<ul>
+				<ul>
 	{%for user in user_list%}
-      <li><a href="#">{{user.first_name}} {{user.last_name}}</a></li>
+				<li><a href="#">{{user.first_name}} {{user.last_name}}</a></li>
 	{%endfor%}
-	</ul>
+				</ul>
 	{%else%}
-	<p>No users are available.</p>
+				<p>No users are available.</p>
 	{%endif%}
-	<p style="position:absolute;left:35%;bottom:10px;"><a class="btn btn-primary btn-medium" href="{%url 'create_user'%}" role="button">Add User</a></p>
-    </div>
-    <div class="col-sm-10 text-left"> 
-      <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
+				<p style="position:absolute;left:35%;bottom:10px;"><a class="btn btn-primary btn-medium" href="{%url 'create_user'%}" role="button">Add User</a></p>
+			</div>
+	{%endblock%}
+	
+	{%block content1%}
+		<div class="col-sm-10 text-left"> 
+			<h1>Welcome</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<hr>
 	  
-	  <form class="navbar-form navbar-left" action="save_user" method="post">
-	  {%csrf_token%}
+			<form class="navbar-form navbar-left" action="save_user" method="post">
+			{%csrf_token%}
 	  
-		{% for field in form %}
-		<div class="form-group">
+			{% for field in form %}
+			<div class="form-group">
 			<div class="profile-label" for="{{field.name}}">{{field.label}}</div>
 			{{field}}
 			{{field.errors}}
 			
-		</div><br>
-		{%endfor%}
-		<br>
-		<div class="profile-input w33">
-	<input type="submit" value="Save" class="btn btn-default">
-	  <input type="reset" value="Reset" class="btn btn-default">
-	  </div>
-	  <!--<fieldset>
-	  <legend>User Information:</legend>
-	  <div class="form-group>
-	  <label for="id_first_name">First Name:</label><br>
-	  <input type="text" id="id_first_name" class="form-control"><br>
-	  </div>
-	  	  <div class="form-group>
-	  <label for="id_last_name">Last Name:</label><br>
-	  <input type="text" id="id_last_name" class="form-control"><br>
-	  </div>
-	  	  	  <div class="form-group>
-	  <label for="id_email">Email:</label><br>
-	  <input type="email" id="id_email" class="form-control"><br>
-	  </div>
-	  	  	  	  <div class="form-group>
-	  <label for="id_phonenumber">Phone Number:</label><br>
-	  <input type="tel" id="id_phonenumber" class="form-control"><br>
-	  </div>
-	  
-	  {%if group_list%}
-	  <div class="form-group>
-	  <label for="id_group">Group:</label><br>
-	  <input list="group_list" id="id_group" class="form-control">
-	  <datalist id="group_list">
-	  {% for group in group_list%}
-	  <option value={{group.group_name}}>
-	  {%endfor%}
-	  </datalist>
-	  <br>
-	  </div>
-	  {%else%}
-	  <div class="form-group>
-	  <label for="id_group">No Group Created so far!</label><br>
-	  <br>
-	  </div>
-	  {%endif%}
-	  
-	  <div>
-	  <input type="submit" value="Save" class="btn btn-default">
-	  <input type="reset" value="Reset" class="btn btn-default">
-	  </div>
-	  -->
-	  </form>
-	  <!--
-      <form action="/first_name/" method="post>
-		{%csrf_token%}
-		{{form}}
-		<input type="submit" value="Submit"/>
-		</form>
-		-->
-    </div>
-
-  </div>
+			</div><br>
+			{%endfor%}
+			<br>
+			<div class="profile-input w33">
+			<input type="submit" value="Save" class="btn btn-default">
+			<input type="reset" value="Reset" class="btn btn-default">
+			</div>
+	
+			</form>
+		</div>
 	{%endblock%}
 	{%block footer%}
 	

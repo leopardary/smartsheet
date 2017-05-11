@@ -1,0 +1,32 @@
+{%extends "staircase\foup_wafer.html"%}
+
+    {%block content1%}
+	<div class="col-sm-10 text-left">
+		<h1>Welcome</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<hr>
+	  
+		<form class="navbar-form navbar-left" action="./save_foup" method="post">
+		{%csrf_token%}
+		<h3> Create New Foup:</h3>
+		{% for field in form %}
+		<div class="form-group">
+			<div class="profile-label" for="{{field.name}}" >{{field.label}}</div>
+			{{field}}
+			{{field.errors}}
+			
+		</div><br>
+		{%endfor%}
+		<br>
+		<div class="profile-input w33">
+			<input type="submit" value="Save" class="btn btn-default">
+			<input type="reset" value="Reset" class="btn btn-default">
+		</div>
+
+		</form>
+
+	</div>
+	{%endblock%}
+	{%block footer%}
+	
+	{%endblock%}
