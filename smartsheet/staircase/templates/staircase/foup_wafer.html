@@ -13,7 +13,7 @@
 			{%if foup_list%}
 			<ul>
 			{%for foup in foup_list%}
-			<li><a href="{{foup.foupname}}">{{foup.foupname}} {{foup.owner.first_name}}_{{foup.owner.last_name}}</a></li>
+			<li><a href="/staircase/foups/{{foup.foupname}}">{{foup.foupname}} {{foup.owner.first_name}}_{{foup.owner.last_name}}</a></li>
 			{%endfor%}
 			</ul>
 			{%else%}

@@ -3,7 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models.Wafer_Management.Wafer_Management import Wafer,Foup,Foup_slot
 from .models.User.User import User,Group
 from django.template import loader
-from .forms import user_form,Foup_form
+from .forms import user_form,Foup_form, wafer_reclaim_form
+import pdb
 
 def index(request):
     return render(request,'staircase/index.html')
@@ -45,17 +46,60 @@ def save_foup(request):
             Foup.create(foupname=form.cleaned_data['foupname'],note=form.cleaned_data['note'],owner=User.objects.filter(pk=form.cleaned_data['owner'])[0])
             return HttpResponseRedirect('/staircase/foups/create')
     else:
-        form=user_form()
+        form=Foup_form()
     return render(request,'staircase/create_foup.html',{'form':form})
 
-def foup_detail(request,foup_name):
+def reclaim_wafers(request,foup_name):
+    staircase=Group.objects.filter(group_name='Staircase')
+    foup_list=Foup.objects.filter(owner__group=staircase[0])
     foup=Foup.objects.filter(foupname=foup_name)[0]
     slot_list=foup.foup_slot_set.all()
     context={
-        'foup':foup,
-        'slot_list':slot_list,
+    'foup':foup,
+    'slot_list':slot_list,
+	'foup_list':foup_list,
+    }
+    return render(request,'staircase/reclaim_wafers.html',context)
+
+
+def load_execute(request,foup_name):
+
+    staircase=Group.objects.filter(group_name='Staircase')
+    foup_list=Foup.objects.filter(owner__group=staircase[0])
+    foup=Foup.objects.filter(foupname=foup_name)[0]
+    pdb.set_trace()
+    wafer_type=request.POST['wafer_type']
+    slot_list=request.POST.getlist('available_slot')
+
+
+
+
+def load_wafers(request,foup_name):
+    staircase=Group.objects.filter(group_name='Staircase')
+    foup_list=Foup.objects.filter(owner__group=staircase[0])
+    foup=Foup.objects.filter(foupname=foup_name)[0]
+    slot_list=foup.foup_slot_set.all()
+    context={
+    'foup':foup,
+    'slot_list':slot_list,
+	'foup_list':foup_list,
+    }
+    return render(request,'staircase/load_wafers.html',context)
+
+
+
+def foup_detail(request,foup_name):
+    staircase=Group.objects.filter(group_name='Staircase')
+    foup_list=Foup.objects.filter(owner__group=staircase[0])
+    foup=Foup.objects.filter(foupname=foup_name)[0]
+    slot_list=foup.foup_slot_set.all()
+    context={
+    'foup':foup,
+    'slot_list':slot_list,
+	'foup_list':foup_list,
     }
     return render(request,'staircase/foup_detail.html',context)
+
 
 def project(request):
     return render(request,'staircase/project.html')

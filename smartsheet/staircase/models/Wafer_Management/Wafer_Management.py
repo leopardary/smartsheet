@@ -96,3 +96,10 @@ class Foup_slot(models.Model):
             self.save()
             print "Reclaim successfully"
         return
+    def has_wafer(self):
+        return self.wafer!=None
+    def wafer_used(self):
+        if self.has_wafer():
+            return self.wafer.isUsed;
+        else:
+            return False
