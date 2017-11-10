@@ -1,8 +1,10 @@
 from __future__ import unicode_literals
+from django.utils.encoding import smart_unicode
 from django.db import models
-
+import pdb
 
 from ..User import User
+
 
 class Foup(models.Model):
     foupname=models.CharField(max_length=16, verbose_name='Foup Name',primary_key=True)
@@ -43,24 +45,27 @@ class Foup(models.Model):
         return
 
 class Wafer(models.Model):
+    waferType=(
+        ('PT', 'Particle Grade Wafer'),
+        ('LR', 'Low Res Particle Grade Wafer'),
+        ('MC', 'Mechanical Grade Wafer'),
+        ('ER', 'External Reclaimed Wafer'),
+        ('IR', 'Internal Reclaimed Wafer'),
+    )
+
     used_choices=(
         ('N','New'),
         ('U','Used'),
     )
     isUsed=models.CharField(max_length=10,choices=used_choices)
-    waferType=(
-        ('PT', 'Particle Grade Wafer'),
-        ('LR', 'Low Resistivity Particle Grade Wafer'),
-        ('MC', 'Mechanical Grade Wafer'),
-        ('ER', 'External Reclaimed Wafer'),
-        ('IR', 'Internal Reclaimed Wafer'),
-    )
+
     wafertype=models.CharField(max_length=20,choices=waferType,default='Internal Reclaimed Wafer')
     note=models.CharField(max_length=200,null=True,blank=True)
     timestamp=models.DateTimeField(auto_now_add=True,auto_now=False)    #creation time
     updated=models.DateTimeField(auto_now_add=False,auto_now=True)  #update time
     def __str__(self):
-        return smart_unicode(self.waferType+' '+self.isUsed)
+        return smart_unicode(self.wafertype+' '+self.isUsed)
+
 
 class Foup_slot(models.Model):
     foup=models.ForeignKey(Foup,on_delete=models.CASCADE)
@@ -82,7 +87,8 @@ class Foup_slot(models.Model):
         if self.wafer!=None:
             print "Slot: "+str(self.slot)+" still has wafer. Load unsuccessfull."
             return
-        new_wafer=Wafer(isUsed='New',waferType=wafer_type)
+        new_wafer=Wafer(isUsed='New',wafertype=wafer_type,note=self.foup.foupname+' S'+str(self.slot))
+        #pdb.set_trace()
         new_wafer.save()
         self.wafer=new_wafer
         self.save()
@@ -100,6 +106,9 @@ class Foup_slot(models.Model):
         return self.wafer!=None
     def wafer_used(self):
         if self.has_wafer():
-            return self.wafer.isUsed;
+            if self.wafer.isUsed=='New':
+                return False
+            else:
+                return True
         else:
             return False

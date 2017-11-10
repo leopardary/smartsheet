@@ -1,4 +1,4 @@
-from .Chamber import Chamber
+from .Chamber import Chamber,ChamberPart
 from .Measurements.Metrology import Metrology
 from .Measurements.Recipe import Recipe
 from .Measurements.thickness import Thickness

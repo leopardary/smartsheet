@@ -1,0 +1,65 @@
+{%extends "staircase\foup_detail.html"%}
+
+
+{%block head1%}
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#check_all').click(function(){
+		//alert("select_all checked!");
+		$('input[name=available_slot]').prop("checked",true);
+		
+	});
+	
+});
+</script>
+
+{%endblock%}
+
+	{%block content1%}
+
+		<div class="col-sm-8 text-left"> 
+		<h3>{{foup.foupname}} Reclaim</h3>
+		<hr>
+			{%if slot_list%}
+			<form class="navbar-form navbar-left" action="/staircase/foups/{{foup.foupname}}/load/execute" method="post">
+			{%csrf_token%}
+			<h4>Wafer Type</h4>
+			<input type="radio" name="wafer_type" value="Internal Reclaimed Wafer" checked="checked">Internal Reclaimed Wafer<br>
+			<input type="radio" name="wafer_type" value="Particle Grade Wafer">Particle Grade Wafer<br>
+			<input type="radio" name="wafer_type" value="Low Res Particle Grade Wafer">Low Res Particle Grade Wafer<br>
+			<input type="radio" name="wafer_type" value="Mechanical Grade Wafer">Mechanical Grade Wafer<br>
+			<input type="radio" name="wafer_type" value="External Reclaimed Wafer">External Reclaimed Wafer<br>
+			
+			<hr>
+			<h4>Slot</h4>
+			{% for slot in slot_list %}
+			{%if slot.has_wafer%}
+				<input type="checkbox" name="occupied_slot" value={{slot.slot}} disabled>{{foup.foupname}}:S{{slot.slot}}
+			{%else%}
+				<input type="checkbox" name="available_slot" value={{slot.slot}}>{{foup.foupname}}:S{{slot.slot}}
+			{%endif%}
+			<br>
+			{%endfor%}
+			<br>
+			<input type="checkbox" id="check_all">Select All<br/>
+			<div class="profile-input w33">
+				<input type="submit" value="Submit" class="btn btn-default">
+				<input type="reset" value="Reset" class="btn btn-default">
+			</div>
+			{%endif%}
+			</form>
+
+		</div>
+		<div class="col-sm-2 sidenav">
+			<div>
+				<p><a class="btn btn-primary btn-medium" href="/staircase/foups/{{foup.foupname}}/reclaim" role="button">Reclaim Wafers</a></p>
+			</div>
+			<div>
+				<p><a class="btn btn-primary btn-medium" href="/staircase/foups/{{foup.foupname}}/load" role="button">Load Wafers</a></p>
+			</div>
+
+		</div>
+	{%endblock%}
+	{%block footer%}
+	
+	{%endblock%}

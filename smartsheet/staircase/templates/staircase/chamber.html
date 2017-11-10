@@ -7,3 +7,19 @@
         <li class="active"><a href="{%url 'chamber'%}">Chamber</a></li>
       </ul>
 	{%endblock%}
+	
+	  {%block content%} 
+    <div class="col-sm-2 sidenav">
+			{%if chamber_list%}
+			<ul>
+			{%for chamber in chamber_list%}
+			<li><a href="/staircase/chamber/{{chamber.id}}">{{chamber.chamberName}} {{chamber.chamberOwner.first_name}}_{{chamber.chamberOwner.last_name}}</a></li>
+			{%endfor%}
+			</ul>
+			{%else%}
+			<p>No Chamber is available.</p>
+			{%endif%}
+			<p style="position:absolute;left:35%;bottom:10px;"><a class="btn btn-primary btn-medium" href="{%url 'create_chamber'%}" role="button">Add Chamber</a></p>
+	  
+    </div>
+	{%endblock%}

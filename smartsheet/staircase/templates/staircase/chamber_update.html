@@ -1,0 +1,43 @@
+{%extends "staircase\chamber.html"%}
+
+
+	
+	{%block content1%}
+		<div class="col-sm-8 text-left">
+		<form class="navbar-form navbar-left" action="/staircase/foups/{{foup.foupname}}/reclaim/execute" method="post">
+			<h3>Chamber Name:{{chamber.chamberName}}</h3>
+			<hr>
+			<h4>Chamber Location: {{chamber.chamberPosition}}</h4><br>
+			<h4>Chamber Owner:	{{chamber.chamberOwner.first_name}} {{chamber.chamberOwner.last_name}}<h4><br>
+			<h4>Note:	{{chamber.note}}</h4><br>
+			<h4>Last Update:	{{chamber.updated}}</h4><br>
+			
+			{%if part_list%}
+			<table class="table table-bordered">
+				<tr>
+					<th>Part Name</th>
+					<th>Part Number</th>
+					<th>Serial Number</th>
+					<th>Note</th>
+				</tr>
+				{%for part in part_list%}
+				<tr>
+					<td>{{part.partName}}</td>
+					<td>{{part.partNumber}} </td>
+					<td>{{part.serialNumber}}</td>
+					<td>{{part.note}}</td>
+				</tr>
+				{%endfor%}
+			</table>
+			{%endif%}
+		</div>
+		<div class="col-sm-2 sidenav">
+			<div>
+				<p><a class="btn btn-primary btn-medium" href="/staircase/chamber/{{chamber.id}}/update" role="button">Update Chamber Info</a></p>
+			</div>
+
+		</div>
+	{%endblock%}
+	{%block footer%}
+	
+	{%endblock%}

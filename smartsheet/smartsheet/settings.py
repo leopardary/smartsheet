@@ -125,3 +125,5 @@ STATICFILES_DIRS=(
     os.path.join(BASE_DIR, "staircase\\static\\staircase\\"),
 )
 #1st step, make the static files in the static folder in app level. 2nd step, run "python manage.py collectstatic", to copy the static files to static root folder.
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+MEDIA_URL='/media/'
