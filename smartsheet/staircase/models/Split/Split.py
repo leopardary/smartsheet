@@ -1,10 +1,10 @@
 from django.db import models
 
-from ..User import User
-from ..Wafer_Management import Wafer,Foup_slot
-from ..Chamber import Chamber
-from ..ProcessRecipe import ProcessRecipe
-from .Project import Project
+from .. import User
+from .. import Wafer,Foup_slot
+from .. import Chamber
+from .. import ProcessRecipe
+from .. import Project
 
 
 class Split(models.Model):

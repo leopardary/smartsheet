@@ -1,7 +1,7 @@
 from django.db import models
 
 import pandas as pd
-from ..Chamber import Chamber
+from .. import Chamber
 
 from datetime import datetime
 

@@ -1,9 +1,9 @@
 from __future__ import unicode_literals
-from django.utils.encoding import smart_unicode
+from django.utils.encoding import smart_text
 from django.db import models
 import pdb
 
-from ..User import User
+from .. import User
 
 
 class Foup(models.Model):
@@ -39,9 +39,9 @@ class Foup(models.Model):
         for i in range(1,26):
             foup_slot=self.foup_slot_set.filter(slot=i)[0]
             if foup_slot.wafer==None:
-                print self.foupname+'\t'+'S'+str(i)+'\t'+'Vacant'
+                print(self.foupname+'\t'+'S'+str(i)+'\t'+'Vacant')
             else:
-                print self.foupname+'\t'+'S'+str(i)+'\t'+foup_slot.wafer.isused
+                print(self.foupname+'\t'+'S'+str(i)+'\t'+foup_slot.wafer.isused)
         return
 
 class Wafer(models.Model):
@@ -64,7 +64,7 @@ class Wafer(models.Model):
     timestamp=models.DateTimeField(auto_now_add=True,auto_now=False)    #creation time
     updated=models.DateTimeField(auto_now_add=False,auto_now=True)  #update time
     def __str__(self):
-        return smart_unicode(self.wafertype+' '+self.isUsed)
+        return smart_text(self.wafertype+' '+self.isUsed)
 
 
 class Foup_slot(models.Model):
@@ -85,22 +85,22 @@ class Foup_slot(models.Model):
     def load_new_wafers(self,wafer_type):
         #load wafer into the current foup_slot: 1. check whether this slot is vacant; 2. load new wafers
         if self.wafer!=None:
-            print "Slot: "+str(self.slot)+" still has wafer. Load unsuccessfull."
+            print("Slot: "+str(self.slot)+" still has wafer. Load unsuccessfull.")
             return
         new_wafer=Wafer(isUsed='New',wafertype=wafer_type,note=self.foup.foupname+' S'+str(self.slot))
         #pdb.set_trace()
         new_wafer.save()
         self.wafer=new_wafer
         self.save()
-        print "Load sucessfully."
+        print("Load sucessfully.")
         return
     def reclaim_wafer(self):
         if self.wafer==None:
-            print "Slot: "+str(self.slot)+" is vacant."
+            print("Slot: "+str(self.slot)+" is vacant.")
         else:
             self.wafer=None
             self.save()
-            print "Reclaim successfully"
+            print("Reclaim successfully")
         return
     def has_wafer(self):
         return self.wafer!=None

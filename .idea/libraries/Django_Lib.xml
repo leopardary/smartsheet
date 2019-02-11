@@ -1,0 +1,8 @@
+<component name="libraryTable">
+  <library name="Django Lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Lib/site-packages/Django-1.10.7-py2.7.egg" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

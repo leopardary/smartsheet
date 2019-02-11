@@ -1,6 +1,6 @@
 from django.db import models
-from .Recipe import Recipe
-from ..Split import Split
+from .. import Recipe
+from .. import Split
 
 class Thickness(models.Model):
     timestamp=models.DateTimeField(auto_now_add=True,auto_now=False)

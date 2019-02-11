@@ -1,5 +1,5 @@
 from django import forms
-from ..models.User.User import Group,User
+from ..models import Group, User
 
 
 class user_form(forms.Form):

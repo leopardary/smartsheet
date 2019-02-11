@@ -1,6 +1,6 @@
 from django import forms
 from ..models.Chamber import Chamber
-from ..models.User import User
+from ..models import User
 
 class chamber_form(forms.Form):
     chamberName=forms.CharField(label='Chamber Name', max_length=30,widget=forms.TextInput(attrs={'class':'form-control'}),initial='GT7A Side1') #,required=False

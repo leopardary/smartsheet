@@ -2,7 +2,7 @@ from django.db import models
 
 class Group(models.Model):
     group_name=models.CharField(max_length=120)
-    parent_group=models.ForeignKey('self',null=True,blank=True)
+    parent_group=models.ForeignKey('self',null=True,blank=True,on_delete=models.SET_NULL)
     note=models.CharField(max_length=500,null=True,blank=True)
     manager=models.ForeignKey('User',on_delete=models.SET_NULL,null=True,blank=True,related_name='groupmanager')
     timestamp=models.DateTimeField(auto_now_add=True,auto_now=False)    #creation time

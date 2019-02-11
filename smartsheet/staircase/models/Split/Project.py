@@ -1,6 +1,6 @@
 from django.db import models
 
-from ..User import User
+from .. import User
 
 class Project(models.Model):
     projectName=models.CharField(max_length=100)

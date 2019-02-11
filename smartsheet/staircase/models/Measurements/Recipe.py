@@ -1,5 +1,5 @@
 from django.db import models
-from .Metrology import Metrology
+from .. import Metrology
 
 #this model contains all recipes, but only gives name and discription. Should include the method for parsing result.
 

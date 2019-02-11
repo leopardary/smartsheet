@@ -1,6 +1,6 @@
 from django.db import models
 
-from ..User import User
+from .. import User
 import pandas as pd
 from datetime import datetime
 import pdb
@@ -50,7 +50,7 @@ class Chamber(models.Model):
                     if currentPart.chamber==last_chamber:   #if the found record for chamber part exist in the latest chamber record, just need to add the part record to partlist for the new chamber configuration
                         partlist.append(currentPart)
                     else:
-                        print 'The part: '+iPartName+'\t'+'PartNumber: '+iPartNumber+'\t'+'SerialNumber: '+iSerialNumber+'\t'+'is on Chamber: '+str(currentPart.chamber.chamberName)
+                        print('The part: '+iPartName+'\t'+'PartNumber: '+iPartNumber+'\t'+'SerialNumber: '+iSerialNumber+'\t'+'is on Chamber: '+str(currentPart.chamber.chamberName))
                         return
             else:   #if the part is not in database
                 new_part=ChamberPart(partName=str(data[column_head[0]][i]),partNumber=str(data[column_head[1]][i]),serialNumber=str(data[column_head[2]][i]),note=str(data[column_head[3]][i]))
