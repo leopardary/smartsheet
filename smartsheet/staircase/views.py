@@ -1,10 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
-from .models.Wafer_Management.Wafer_Management import Wafer,Foup,Foup_slot
-from .models.User.User import User,Group
+from .models import Wafer, Foup, Foup_slot
+from .models import User, Group
 from django.template import loader
 from .forms import user_form,Foup_form, wafer_reclaim_form, chamber_form
-from .models.Chamber import Chamber
+from .models import Chamber
 import pdb
 
 def index(request):
@@ -49,7 +49,7 @@ def chamber(request):
         'chamber_list':chamber_list,
     }
     #return render(request,'staircase/create_chamber.html',context)
-    return render(request,'staircase/chamber.html',context)
+    return render(request,'staircase/chamber/chamber.html',context)
     #return HttpResponse("Here is managing the Chamber HW.")
 
 def create_chamber(request):
@@ -79,7 +79,7 @@ def create_chamber(request):
         'chamber_list':chamber_list,
         'form':form,
     }
-    return render(request,'staircase/create_chamber.html',context)
+    return render(request,'staircase/chamber/create_chamber.html',context)
 
 def save_chamber(request):
     #pdb.set_trace()
@@ -110,7 +110,7 @@ def chamber_detail(request,chamber_id):
     'part_list':part_list,
     'chamber_list':chamber_list,
     }
-    return render(request,'staircase/chamber_detail.html',context)
+    return render(request,'staircase/chamber/chamber_detail.html',context)
 
 def chamber_update(request,chamber_id):
     staircase=Group.objects.filter(group_name='Staircase')
