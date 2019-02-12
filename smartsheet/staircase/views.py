@@ -134,7 +134,7 @@ def chamber_delete(request,chamber_id):
     context={
     'chamber_list':chamber_list,
     }
-    return render(request,'staircase/chamber.html',context)
+    return render(request,'staircase/chamber/chamber.html',context)
 
 def save_foup(request):
     if request.method=='POST':

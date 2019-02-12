@@ -1,0 +1,20 @@
+Part_Name,Part_Number,Serial_Number,Note
+Input Manifold,0041-79836,-,CIP Input Manifold
+Output Manifold,0041-79707,-,-
+Gas Box,0041-78464,-,-
+Faceplate,0041-88615,301760-1516-00002,Supported FPs
+Faceplate Heater,0041-79999,-,CIP with grafoil
+Upper Blocker Plate,0041-81313,-,-
+Lower Blocker Plate,0041-81073,-,-
+RF Strap,0010-54999,-,CIP with SV connection
+Pedestal Heater,0010-63185,251-079,Modified from existing tight pocket heater
+Edge Ring,0200-18952,-,Installed on S1
+PPM Al Ring,0041-88650,-,-
+Bottom Purge Baffle,0200-18880,-,Ceramic baffles
+Top Tuners,0190-52073,604700,-
+Bottom Tuners,0190-52249,582459,-
+Orifice on Shared Gas Lines,Installed,50mils,-
+Orifice on Shared Liquid Lines,-,-,-
+Orifice on RPS Clean Gas Lines,3510-00444,-,60mil orifice
+RPS Unites,0190-51186,110,6 liter RPS units
+ESC,0246-22668,31,-

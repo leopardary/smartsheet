@@ -1,19 +1,30 @@
 from django.db import models
-
+from django.utils import timezone
 from .. import User
 import pandas as pd
-from datetime import datetime
-import pdb
+
+
+def add_configuration_file(instance,filename):
+    #define the location of the file to upload to
+    return f'{instance.chamberName}/{timezone.now().strftime("%Y-%m-%d")}/{filename}'
 
 class Chamber(models.Model):
     chamberName=models.CharField(max_length=30) #Chamber+side, eg: GT7A_S1
     chamberPosition=models.CharField(max_length=30,null=True,blank=True) #eg: BayJ6
     chamberDescription=models.CharField(max_length=10000,null=True,blank=True)
-    descriptionFile=models.FileField(upload_to=(chamberName),null=True,blank=True)
+    #the following specifies the location of the raw configuration file to be uploaded to.
+    descriptionFile=models.FileField(upload_to=add_configuration_file,null=True,blank=True)
     chamberOwner=models.ForeignKey(User,on_delete=models.SET_NULL,blank=True,null=True)
-    timestamp=models.DateTimeField(auto_now_add=True,auto_now=False)    #creation time
-    updated=models.DateTimeField(auto_now_add=False,auto_now=True)  #update time
+    timestamp=models.DateTimeField(auto_now_add=True)    #creation time
+    updated=models.DateTimeField(auto_now=True)  #update time
     note=models.CharField(max_length=200,null=True,blank=True)
+    '''
+    def save(self,*args,**kwargs):
+        if not self.id:
+            self.timestamp=timezone.now()
+        self.updated=timezone.now()
+        return super(Chamber, self).save(*args,**kwargs)
+    '''
     def __str__(self):
         return self.chamberName+' / '+self.timestamp.strftime('%Y-%m-%d %H:%M')
     def generate_description(self):
