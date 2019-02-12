@@ -19,7 +19,7 @@ def foups(request):
     context={
         'foup_list':foup_list,
     }
-    return render(request,'staircase/foup_wafer.html',context)
+    return render(request,'staircase/foup_wafer/foup_wafer.html',context)
     #return HttpResponse("Here is for managing foups and wafers.")
 
 def create_foup(request):
@@ -38,7 +38,7 @@ def create_foup(request):
         'foup_list':foup_list,
         'form':form,
     }
-    return render(request,'staircase/create_foup.html',context)
+    return render(request,'staircase/foup_wafer/create_foup.html',context)
 
 def chamber(request):
     staircase=Group.objects.filter(group_name='Staircase')
@@ -156,7 +156,7 @@ def reclaim_wafers(request,foup_name):
     'slot_list':slot_list,
 	'foup_list':foup_list,
     }
-    return render(request,'staircase/reclaim_wafers.html',context)
+    return render(request,'staircase/foup_wafer/foup_details/reclaim_wafers.html',context)
 
 def reclaim_execute(request,foup_name):
     if request.method=='POST':
@@ -198,7 +198,7 @@ def load_wafers(request,foup_name):
     'slot_list':slot_list,
 	'foup_list':foup_list,
     }
-    return render(request,'staircase/load_wafers.html',context)
+    return render(request,'staircase/foup_wafer/foup_details/load_wafers.html',context)
 
 
 
@@ -212,7 +212,7 @@ def foup_detail(request,foup_name):
     'slot_list':slot_list,
 	'foup_list':foup_list,
     }
-    return render(request,'staircase/foup_detail.html',context)
+    return render(request,'staircase/foup_wafer/foup_details/foup_detail.html',context)
 
 
 def project(request):

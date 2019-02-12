@@ -1,12 +1,10 @@
 from django.db import models
 from django.utils import timezone
 from .. import User
+from ..model_functions.add_configuration_file import add_configuration_file
 import pandas as pd
 
 
-def add_configuration_file(instance,filename):
-    #define the location of the file to upload to
-    return f'{instance.chamberName}/{timezone.now().strftime("%Y-%m-%d")}/{filename}'
 
 class Chamber(models.Model):
     chamberName=models.CharField(max_length=30) #Chamber+side, eg: GT7A_S1
