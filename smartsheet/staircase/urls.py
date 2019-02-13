@@ -24,4 +24,5 @@ urlpatterns=[
     url(r'^measurementResult/',views.measurementResult,name='measurementResult'),
     url(r'^user/create/$',views.create_user,name='create_user'),
     url(r'^user/create/save_user',views.save_user,name='save_user'),
+    url(r'^thickness/',views.thickness,name='thickness'),
 ]

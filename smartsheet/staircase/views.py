@@ -272,3 +272,5 @@ def save_user(request):
 ##        user1=User.objects.get()
 # Create your views here.
 
+def thickness(request):
+    return HttpResponse("Here is thickness module.")
