@@ -28,4 +28,4 @@ def measurementResult(request):
 # Create your views here.
 
 def thickness(request):
-    return HttpResponse("Here is thickness module.")
+    return render(request,'staircase/thickness/thickness.html')
