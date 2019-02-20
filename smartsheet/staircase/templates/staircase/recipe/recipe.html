@@ -1,0 +1,27 @@
+{%extends "staircase\index.html"%}
+	{%block navbar_choices%}
+      <ul class="nav navbar-nav">
+        <li><a href="{%url 'project'%}">Projects</a></li>
+        <li><a href="{%url 'user'%}">Users</a></li>
+        <li><a href="{%url 'foups'%}">Foup&Wafer</a></li>
+        <li><a href="{%url 'chamber'%}">Chamber</a></li>
+          <li><a href="#">Split</a></li>
+          <li class="active"><a href="{%url 'processrecipe'%}">Recipe</a></li>
+          <li><a href="{%url 'thickness'%}">Thickness</a></li>
+      </ul>
+	{%endblock%}
+
+    {%block content%}
+		<div class="col-sm-2 sidenav">
+		{%if chamber_list%}
+		<ul>
+		{%for chamber in chamber_list%}
+		<li><a href="#">{{chamber}}</a></li>
+		{%endfor%}
+		</ul>
+		{%else%}
+		<p>No chambers are available.</p>
+		{%endif%}
+		<p style="position:absolute;left:35%;bottom:10px;"><a class="btn btn-primary btn-medium" href="{%url 'create_recipe'%}" role="button">Add Recipe</a></p>
+		</div>
+	{%endblock%}
