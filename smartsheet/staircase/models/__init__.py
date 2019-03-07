@@ -1,7 +1,7 @@
 from .User.User import User, Group
 from .Wafer_Management.Wafer_Management import Foup
 from .Measurements.Raw_data_file import Raw_data_file
-from .Chamber.Chamber import Chamber, ChamberPart
+from .Chamber import *
 from .Measurements.Metrology import Metrology
 from .Measurements.Recipe import Recipe
 from .Wafer_Management.Wafer_Management import Wafer, Foup_slot

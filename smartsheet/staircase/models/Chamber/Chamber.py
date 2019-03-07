@@ -1,14 +1,29 @@
 from django.db import models
 from django.utils import timezone
-from .. import User
+from .. import User,Group
 from ..model_functions.add_configuration_file import add_configuration_file
 import pandas as pd
 
 
-
 class Chamber(models.Model):
-    chamberName=models.CharField(max_length=30) #Chamber+side, eg: GT7A_S1
+    chamberName=models.CharField(max_length=30) #Chamber
     chamberPosition=models.CharField(max_length=30,null=True,blank=True) #eg: BayJ6
+    timestamp=models.DateTimeField(auto_now_add=True)    #creation time
+    note=models.CharField(max_length=200,null=True,blank=True)
+    groups=models.ManyToManyField(Group,through='Chamber_Group_Relationship')
+    def __str__(self):
+        return self.chamberName
+
+class Chamber_Group_Relationship(models.Model):
+    chamber=models.ForeignKey(Chamber,on_delete=models.SET_NULL,null=True)
+    group=models.ForeignKey(Group,on_delete=models.SET_NULL,null=True)
+    start_date=models.DateField()
+    end_date=models.DateField(null=True,blank=True)
+    note=models.CharField(max_length=200,null=True,blank=True)
+
+
+class Chamber_Configuration(models.Model):
+    chamber=models.ForeignKey(Chamber,on_delete=models.SET_NULL,null=True)    #link to Chamber
     chamberDescription=models.CharField(max_length=10000,null=True,blank=True)
     #the following specifies the location of the raw configuration file to be uploaded to.
     descriptionFile=models.FileField(upload_to=add_configuration_file,null=True,blank=True)
@@ -24,7 +39,9 @@ class Chamber(models.Model):
         return super(Chamber, self).save(*args,**kwargs)
     '''
     def __str__(self):
-        return self.chamberName+' / '+self.timestamp.strftime('%Y-%m-%d %H:%M')
+        return self.chamber.chamberName+' / '+self.timestamp.strftime('%Y-%m-%d %H:%M')
+
+    '''
     def generate_description(self):
         partlist=self.chamberpart_set.all()
         result='PartName,PartNumber,SerialNumber,Note'+'\n'
@@ -69,10 +86,11 @@ class Chamber(models.Model):
             part.chamber=self
             part.save()
         return partlist
-
+'''
+'''
 class ChamberPart(models.Model):
     partName=models.CharField(max_length=30)
-    chamber=models.ForeignKey(Chamber,on_delete=models.SET_NULL,blank=True,null=True)
+    chamber=models.ForeignKey(Chamber_Configuration,on_delete=models.SET_NULL,blank=True,null=True)
     partNumber=models.CharField(max_length=50,blank=True,null=True)
     serialNumber=models.CharField(max_length=50,blank=True,null=True)
     note=models.CharField(max_length=200,blank=True,null=True)
@@ -80,3 +98,4 @@ class ChamberPart(models.Model):
     updated=models.DateTimeField(auto_now_add=False,auto_now=True)  #update time
     def __str__(self):
         return self.partName+' / '+self.partNumber+' / '+self.serialNumber+' / '+self.updated.strftime('%Y-%m-%d %H:%M')
+'''

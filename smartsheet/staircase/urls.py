@@ -24,8 +24,10 @@ urlpatterns=[
     url(r'^measurementResult/', views.old_views.measurementResult, name='measurementResult'),
     url(r'^user/create/$', views.create_user, name='create_user'),
     url(r'^user/create/save_user', views.save_user, name='save_user'),
-    url(r'^recipe/$', views.recipe, name='processrecipe'),
-    url(r'^recipe/create/$', views.create_recipe, name='create_recipe'),
+    url(r'^recipe/Ox$$', views.Ox_recipe, name='Ox_recipe'),
+    url(r'^recipe/Nit$$', views.Nit_recipe, name='Nit_recipe'),
+    url(r'^recipe/Stack$$', views.Stack_recipe, name='Stack_recipe'),
+    #url(r'^recipe/create/$', views.create_recipe, name='create_recipe'),
     url(r'^thickness/$', views.old_views.thickness, name='thickness'),
 
 ]

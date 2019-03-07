@@ -1,4 +1,4 @@
-from ...models import User, Group, Chamber
+from ...models import User, Group, Chamber,Chamber_Group_Relationship
 from ...forms import chamber_form
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 def chamber(request):
     staircase=Group.objects.filter(group_name='Staircase')
     group_list=staircase
-    chamber_list=Chamber.objects.filter(chamberOwner__group=staircase[0])
+    chamber_list=Chamber.objects.filter(groups=staircase[0])
     context={
         'group_list':group_list,
         'chamber_list':chamber_list,

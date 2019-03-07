@@ -17,7 +17,9 @@ def create_user(request):
     #return HttpResponse("Here is the page for creating users.")
     if request.method=='POST':
         form=user_form(request.POST)
+        #form.fields('group').queryset=Group.objects.filter(group_name='Staircase')
         if form.is_valid():
+            #form.fields('group')
             return HttpResponseRedirect('/staircase/user/create')
     else:
         form=user_form()

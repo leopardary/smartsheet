@@ -2,26 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6efec5ad-a3a7-4d24-bb0a-735668c23e1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Raw_recipe_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/StaircaseRecipe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartsheet/staircase/views/recipe/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smartsheet/staircase/views/recipe/recipe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smartsheet/staircase/forms/recipe_create_form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/media/staircase.Chamber.chamberName/chamber_configuration.csv" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/media/staircase.Chamber.chamberName/chamber_configuration.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/ProcessRecipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/ProcessRecipe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/models/Split/Split.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/models/Split/Split.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/forms/chamber_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/forms/chamber_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/forms/foup_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/forms/foup_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/forms/user_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/forms/user_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/Chamber.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/Chamber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber/chamber.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber/chamber.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/create_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/create_user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/foup_wafer/foup_wafer.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/foup_wafer/foup_wafer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/recipe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/thickness/thickness.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/thickness/thickness.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartsheet/staircase/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/views/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/views/chamber/chamber.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/views/chamber/chamber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/views/recipe/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/views/recipe/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/views/recipe/recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/views/recipe/recipe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/staircase/views/user/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/staircase/views/user/user.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,22 +37,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/recipe.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-              <folding>
-                <element signature="n#style#0;n#p#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smartsheet/staircase/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            <state relative-caret-position="-77">
+              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -56,28 +49,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/recipe/__init__.py">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/forms/chamber_form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" selection-start-column="28" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/recipe/recipe.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="171">
+              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -86,28 +61,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/create_recipe.html">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/old_views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/StaircaseRecipe.py">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="95">
+              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Split/Split.py">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/User/User.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="19">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/user/user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Chamber/Chamber.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -116,24 +127,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/admin.py">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/forms/foup_form.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="107" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="107" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/forms/user_form.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <caret line="11" column="98" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Measurements/thickness.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,11 +170,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/Split/Project.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/Wafer_Management/Wafer_Management.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/forms/user_form.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/forms/__init__.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/forms/chamber_form.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/foup_wafer.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber/chamber_detail.html" />
@@ -175,49 +182,53 @@
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/foup_wafer/create_foup.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/models/Measurements/thickness.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/add_configuration_file.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/__init__.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/models/model_functions/add_configuration_file.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/Chamber.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/models/Measurements/Raw_data_file.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/views.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/views/chamber/chamber.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/chamber/__init__.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/foup_wafer/wafer.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/foup_wafer/foup.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/foup_wafer/__init__.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/views/user/user.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/user/__init__.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/old_views.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Raw_recipe_file.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/index.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/__init__.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/ProcessRecipe.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/__init__.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/__init__.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/StaircaseRecipe.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/models/Split/Split.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/create_recipe.html" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/forms/recipe_create_form.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/urls.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/views/recipe/__init__.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/index.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/project.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/user.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/create_user.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/thickness/thickness.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/foup_wafer/foup_wafer.html" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber/chamber.html" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/ProcessRecipe.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/__init__.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/__init__.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/StaircaseRecipe.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/admin.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/Split/Split.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/models/__init__.py" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/recipe.html" />
         <option value="$PROJECT_DIR$/smartsheet/staircase/views/recipe/recipe.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/create_recipe.html" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/views/recipe/__init__.py" />
-        <option value="$PROJECT_DIR$/smartsheet/staircase/urls.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/models/__init__.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/__init__.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber/chamber.html" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/admin.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/models/Chamber/Chamber.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/views/chamber/chamber.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/forms/foup_form.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/forms/chamber_form.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/forms/user_form.py" />
+        <option value="$PROJECT_DIR$/smartsheet/staircase/views/user/user.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="16" />
-    <option name="y" value="170" />
-    <option name="width" value="1260" />
-    <option name="height" value="720" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-13" />
+    <option name="y" value="133" />
+    <option name="width" value="1063" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -248,6 +259,13 @@
               <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
               <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
               <item name="staircase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
@@ -403,6 +421,14 @@
               <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
               <item name="staircase" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="foup_wafer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="recipe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -462,24 +488,26 @@
       <workItem from="1549859989879" duration="32616000" />
       <workItem from="1550376552814" duration="12936000" />
       <workItem from="1550646933150" duration="806000" />
+      <workItem from="1550733308529" duration="1240000" />
+      <workItem from="1550904835157" duration="18625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46358000" />
+    <option name="totallyTimeSpent" value="66223000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-13" y="133" width="1063" height="800" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25080907" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.31904286" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.30015552" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Python Console" order="4" visible="true" weight="0.3281493" />
+      <window_info anchor="bottom" id="Python Console" order="4" visible="true" weight="0.31634182" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
@@ -490,7 +518,7 @@
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="SciView" order="2" weight="0.32928804" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout>
@@ -499,28 +527,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/model_functions/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/thickness/foup_wafer.html" />
-    <entry file="file://$PROJECT_DIR$/smartsheet/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/smartsheet/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1577">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/smartsheet/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views.py" />
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/views.py" />
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Measurements/Recipe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -545,33 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/foup_wafer/wafer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#43#428#0" />
-            <element signature="e#474#1037#0" />
-            <element signature="e#1080#1708#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/foup_wafer/foup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#24#402#0" />
-            <element signature="e#434#955#0" />
-            <element signature="e#1131#1549#0" />
-            <element signature="e#1591#1973#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/foup_wafer/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -579,30 +558,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/chamber/chamber.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/user/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="44" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Chamber/Chamber.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -653,88 +612,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/user/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/project.html" />
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/chamber/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="70" lean-forward="true" selection-start-column="70" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/old_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/create_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/thickness/thickness.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/foup_wafer/foup_wafer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/foup_wafer/create_foup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber/chamber.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/User/User.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -755,49 +637,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="16" selection-start-line="13" selection-start-column="4" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/StaircaseRecipe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Split/Split.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Measurements/thickness.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -809,53 +650,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/recipe.html">
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/ProcessRecipe/Staircase/StaircaseRecipe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/create_recipe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/forms/recipe_create_form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber/create_chamber.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/recipe/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="n#li#5;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="n#li#5;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="70" selection-start-line="70" selection-end-line="81" selection-end-column="13" />
+          <folding>
+            <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/create_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="n#li#5;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/thickness/thickness.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="n#li#5;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/foup_wafer/foup_wafer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="n#li#5;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/recipe/recipe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="n#li#5;n#ul#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/recipe/recipe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="221">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/templates/staircase/chamber/chamber.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+          <folding>
+            <element signature="n#li#5;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Chamber/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="77" selection-start-column="77" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/foup_wafer/foup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#1131#1549#0" />
+            <element signature="e#1591#1973#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/foup_wafer/wafer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Split/Split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/chamber/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="70" lean-forward="true" selection-start-column="70" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/chamber/chamber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="37" />
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/User/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/recipe/__init__.py">
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/old_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/User/User.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartsheet/staircase/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="-77">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/forms/foup_form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="107" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="107" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/forms/chamber_form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/forms/user_form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="98" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/views/user/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/staircase/models/Chamber/Chamber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -6,7 +6,18 @@
         <li><a href="{%url 'foups'%}">Foup&Wafer</a></li>
         <li class="active"><a href="{%url 'chamber'%}">Chamber</a></li>
 		  <li><a href="#">Split</a></li>
-		  <li><a href="{%url 'processrecipe'%}">Recipe</a></li>
+        <li class="nav-item dropdown show">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Recipe
+            </a>
+            <div class="dropdown-menu" aira-labelledby="dropdown01">
+              <a class="dropdown-item" href="{%url 'Ox_recipe'%}">Ox Recipe</a>
+              <br>
+              <a class="dropdown-item" href="{%url 'Nit_recipe'%}">Nit Recipe</a>
+              <br>
+              <a class="dropdown-item" href="{%url 'Stack_recipe'%}">Stack Recipe</a>
+            </div>
+        </li>
 		  <li><a href="{%url 'thickness'%}">Thickness</a></li>
       </ul>
 	{%endblock%}
@@ -16,7 +27,7 @@
 			{%if chamber_list%}
 			<ul>
 			{%for chamber in chamber_list%}
-			<li><a href="/staircase/chamber/{{chamber.id}}">{{chamber.chamberName}} {{chamber.chamberOwner.first_name}}_{{chamber.chamberOwner.last_name}}</a></li>
+			<li><a href="/staircase/chamber/{{chamber.id}}">{{chamber.chamberName}}</a></li>
 			{%endfor%}
 			</ul>
 			{%else%}

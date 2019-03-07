@@ -1,4 +1,4 @@
-Common,,,
+Common
 Part_Name,Part_Number,Serial_Number,Note
 Input Manifold,0041-79836,-,CIP Input Manifold
 Output Manifold,0041-79707,-,-
@@ -19,8 +19,8 @@ Orifice on Shared Liquid Lines,-,-,-
 Orifice on RPS Clean Gas Lines,3510-00444,-,60mil orifice
 RPS Unites,0190-51186,110,6 liter RPS units
 ESC,0246-22668,31,-
-,,,
-Side1,,,
+########
+Side1
 Part_Name,Part_Number,Serial_Number,Note
 Input Manifold,0041-79836,-,CIP Input Manifold
 Output Manifold,0041-79707,-,-
@@ -41,8 +41,8 @@ Orifice on Shared Liquid Lines,-,-,-
 Orifice on RPS Clean Gas Lines,3510-00444,-,60mil orifice
 RPS Unites,0190-51186,110,6 liter RPS units
 ESC,0246-22668,31,-
-,,,
-Side2,,,
+########
+Side2
 Part_Name,Part_Number,Serial_Number,Note
 Input Manifold,0041-79836,-,CIP Input Manifold
 Output Manifold,0041-79707,-,-
@@ -63,3 +63,4 @@ Orifice on Shared Liquid Lines,-,-,-
 Orifice on RPS Clean Gas Lines,3510-00444,-,60mil orifice
 RPS Unites,0190-51186,110,6 liter RPS units
 ESC,0246-22668,31,-
+########
