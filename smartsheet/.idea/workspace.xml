@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9361e35a-264f-4fb9-a0ca-e829e9e63834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartsheet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/smartsheet/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/chamber/create_chamber.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/chamber/create_chamber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/create_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/create_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/create_foup.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/create_foup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/foup_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/foup_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/load_wafers.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/load_wafers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/reclaim_wafers.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/reclaim_wafers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_wafer.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_wafer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/recipe/create_recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/recipe/create_recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/recipe/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/recipe/recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/thickness/thickness.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/thickness/thickness.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staircase/templates/staircase/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/staircase/templates/staircase/user.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/index.html" />
+        <option value="$PROJECT_DIR$/smartsheet/settings.py" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/project.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/user.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber_detail.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber_update.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/chamber/create_chamber.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/foup_detail.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/load_wafers.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/reclaim_wafers.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_wafer.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/create_foup.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/recipe/create_recipe.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/recipe/recipe.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/thickness/thickness.html" />
+        <option value="$PROJECT_DIR$/staircase/templates/staircase/create_user.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="20" />
+    <option name="y" value="43" />
+    <option name="width" value="1276" />
+    <option name="height" value="778" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="foup_wafer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="recipe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="thickness" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="staircase" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="smartsheet" type="Python.DjangoServer" factoryName="Django server">
+      <module name="smartsheet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9361e35a-264f-4fb9-a0ca-e829e9e63834" name="Default Changelist" comment="" />
+      <created>1552023819866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552023819866</updated>
+      <workItem from="1552023841005" duration="3246000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3246000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1276" height="778" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24554294" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="4" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/smartsheet/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/views/old_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartsheet/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/chamber/chamber_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/foup_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/load_wafers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_details/reclaim_wafers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/foup_wafer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/foup_wafer/create_foup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/recipe/recipe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/thickness/thickness.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/create_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/recipe/create_recipe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staircase/templates/staircase/chamber/create_chamber.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
