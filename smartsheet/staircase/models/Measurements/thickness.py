@@ -15,3 +15,4 @@ class Thickness(models.Model):
     note=models.CharField(max_length=1000,blank=True,null=True)
     split=models.ForeignKey(Split,on_delete=models.SET_NULL,blank=True,null=True)
     rawDataFile=models.ForeignKey(Raw_data_file,on_delete=models.SET_NULL,blank=True,null=True)
+
