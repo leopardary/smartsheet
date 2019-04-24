@@ -29,5 +29,7 @@ urlpatterns=[
     url(r'^recipe/Stack$$', views.Stack_recipe, name='Stack_recipe'),
     #url(r'^recipe/create/$', views.create_recipe, name='create_recipe'),
     url(r'^thickness/$', views.old_views.thickness, name='thickness'),
+    url(r'^measurementresult/$',views.measurementresult,name='measurementresult'),
+    url(r'^measurementresult/save$',views.measurementresultsave,name='measurementresultsave'),
 
 ]

@@ -3,3 +3,4 @@ from .foup_wafer import *
 from .chamber import *
 from .user import *
 from .recipe import *
+from .measurementresult import *
